@@ -103,7 +103,8 @@ def app():
             print(f"There are {user_counts} users so far!!!")
 
             # Save user's information to json file
-            user_info_path = os.path.join(user_folder.replace(f"database\{user_code}", "info"), f"{user_code}.json")
+            #user_info_path = os.path.join(user_folder.replace(f"database\{user_code}", "info"), f"{user_code}.json")
+            user_info_path = 'deployment/assets/info/'+user_code+'.json'
             user_info = {
                 "name": user_name,
                 "user_code": user_code,
